@@ -10,9 +10,13 @@
 			<%=render 'layouts/header' %>
 		<div class="container">
 			<Span id="test-margin-call">
-			<div class="hero-unit">
-				<%= yield %>
-			</div>
+
+				<% flash.each do |name, msg |%>
+				<%= content_tag(:div, msg, class: "alert alert-#{name}")%>
+				<% end %>
+				<div class="hero-unit">
+					<%= yield %>
+				</div>
 			</span>
 			<%=render 'layouts/footer' %>
 		</div>
