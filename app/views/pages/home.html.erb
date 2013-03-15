@@ -1,6 +1,7 @@
+<% if user_signed_in? %>
+<h1> You're signed in</h1>
+<% else %>
 <div class="row">
-		
-
 	<div class="span8">
 		<h1>Home</h1>
 
@@ -13,3 +14,4 @@
 		</p>
 	</div>
 </div>
+<% end %>
