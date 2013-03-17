@@ -5,9 +5,9 @@ $navbarLinkColor: white;
 */
 
 
-$navbarBackgroundHighlight:#28909C;
-$navbarBackground:#195C63;
-$navbarLinkColorHover:#AFE7ED;
+$navbarBackgroundHighlight:#b91212;
+$navbarBackground:#810c0c;
+$navbarLinkColorHover:#FFF;
 $navbarLinkColorActive:grayDarker;
 
 
@@ -19,20 +19,20 @@ $navbarLinkColorActive:grayDarker;
 	margin-top:70px
 }
 .btn-custom {
-  float:right;
-  background-color: hsl(360, 23%, 21%) !important;
+  float: right;
+  background-color: hsl(0, 82%, 28%) !important;
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#805050", endColorstr="#412929");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#805050), to(#412929));
-  background-image: -moz-linear-gradient(top, #805050, #412929);
-  background-image: -ms-linear-gradient(top, #805050, #412929);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #805050), color-stop(100%, #412929));
-  background-image: -webkit-linear-gradient(top, #805050, #412929);
-  background-image: -o-linear-gradient(top, #805050, #412929);
-  background-image: linear-gradient(#805050, #412929);
-  border-color: #412929 #412929 hsl(360, 23%, 16%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b91212", endColorstr="#810c0c");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#b91212), to(#810c0c));
+  background-image: -moz-linear-gradient(top, #b91212, #810c0c);
+  background-image: -ms-linear-gradient(top, #b91212, #810c0c);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b91212), color-stop(100%, #810c0c));
+  background-image: -webkit-linear-gradient(top, #b91212, #810c0c);
+  background-image: -o-linear-gradient(top, #b91212, #810c0c);
+  background-image: linear-gradient(#b91212, #810c0c);
+  border-color: #810c0c #810c0c hsl(0, 82%, 25%);
   color: #fff !important;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
   -webkit-font-smoothing: antialiased;
 }
 /* Footer CSS */
