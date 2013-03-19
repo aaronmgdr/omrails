@@ -1,10 +1,4 @@
 $navbarLinkColor: white;
-
-/*$headingsFontFamily:Handlee;
-@import url(http://fonts.googleapis.com/css?family=Handlee);
-*/
-
-
 $navbarBackgroundHighlight:#b91212;
 $navbarBackground:#810c0c;
 $navbarLinkColorHover:#FFF;
@@ -35,12 +29,22 @@ $navbarLinkColorActive:grayDarker;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
   -webkit-font-smoothing: antialiased;
 }
-/* Footer CSS */
-.footer {
-}
-html,
-      body {
+/* CSS for footer to stay down */
+.footer { 
+  position: relative;
+  margin-top: -5em; 
+  height: 5em;
+  clear:both;
+  background-color: #F2F2F2;
+  color:$grayLight;
+  padding:20px;
+  text-align: center;
+  } 
+ html,
+ body {
         height: 100%;
+        padding:0;
+        margin:0;
         /* The html and body elements cannot have any padding or margin. */
       }
 
@@ -50,22 +54,17 @@ html,
         height: auto !important;
         height: 100%;
         /* Negative indent footer by it's height */
-        margin: 0 auto -180px;
+        margin: 0 auto -5em;
       }
-
       /* Set the fixed height of the footer here */
       #push,
       #footer {
-        height: 180px;
-      }
-      #footer {
-        background-color: #FFFFF;
-        color:$grayLight;
+        height: 5em;
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
       @media (max-width: 767px) {
-        #footer {
+        .footer {
           margin-left: -20px;
           margin-right: -20px;
           padding-left: 20px;
@@ -73,3 +72,9 @@ html,
         }
       }
 /* End Footer CSS */
+
+/* Font Imports */
+$headingsFontFamily:Handlee;
+@import url(http://fonts.googleapis.com/css?family=Handlee);
+
+
