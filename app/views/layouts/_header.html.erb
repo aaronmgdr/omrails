@@ -16,8 +16,8 @@
        	<ul class="nav"> 
        		<li><%= link_to "Home", root_path %></li>
 			<li><%= link_to "About", about_path %></li>
-			<li><%= link_to "Products", about_path %></li>
-		</ul>
+			<li><%= link_to "Examples", pins_path %></li>
+      		</ul>
 		<ul class="nav pull-right">
       <% if user_signed_in? %>
           <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
