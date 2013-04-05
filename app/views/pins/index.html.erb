@@ -1,4 +1,4 @@
-<h1>Vinyls</h1>
+<h1>Products</h1>
 <br>
 <table class="table table-striped">
   <thead>
@@ -10,10 +10,13 @@
     </tr>
   </thead>
   <tbody>
-    <%= render @pins %>
+    <%= render Pin.all %>
   </tbody>
 </table>
 
 <br/>
-
+<% if user_signed_in? %>
 <%= link_to "New Pin", new_pin_path %>
+<% else %>
+<%= link_to "Sign In to Create New Pin", new_user_session_path %>
+<% end %>
